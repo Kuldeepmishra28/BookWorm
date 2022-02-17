@@ -38,33 +38,10 @@ window.onload = () =>{
 
 }
 
-function loader(){
-  document.querySelector('.loader-container').classList.add('active');
-}
 
 function fadeOut(){
-  setTimeout(loader, 2000);
+  setTimeout(loader, 0);
 }
-
-var swiper = new Swiper(".books-slider", {
-  loop:true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 9500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
 
 var swiper = new Swiper(".featured-slider", {
   spaceBetween: 10,
